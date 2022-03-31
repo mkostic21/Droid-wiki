@@ -39,6 +39,7 @@ import android.view.View
 import com.raywenderlich.android.droidwiki.R
 import com.raywenderlich.android.droidwiki.application.WikiApplication
 import com.raywenderlich.android.droidwiki.model.WikiHomepage
+import com.raywenderlich.android.droidwiki.ui.search.EntryPresenter
 import com.raywenderlich.android.droidwiki.utils.start
 import com.raywenderlich.android.droidwiki.utils.parseHtml
 import kotlinx.android.synthetic.main.activity_homepage.*
@@ -48,8 +49,7 @@ import javax.inject.Inject
 
 class HomepageActivity : Activity(), HomepageView {
 
-  @Inject
-  lateinit var presenter: HomepagePresenter
+  @Inject lateinit var presenter: HomepagePresenter
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
